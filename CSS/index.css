@@ -2,8 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
+    color: #101928;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
 
 header div {
     float: left;
-    width: 45%;
+    width: 40%;
 }
 
 header div.logo h1{
@@ -23,7 +24,7 @@ header div.logo h1{
 }
 
 header div.nav {
-    width: 55%;
+    width: 60%;
     height: 56px;
 }
 
@@ -35,9 +36,14 @@ header div.nav ul li {
     float: left;
 }
 
+header div.nav ul li:hover {
+    border: 1px solid #475367;
+    border-radius: 5px;
+}
+
 header div.nav ul li a {
     text-decoration: none;
-    padding: 15.5px;
+    padding: 20px;
     display: inline-block;
     color: #475367;
     font-weight: 400;
@@ -45,8 +51,9 @@ header div.nav ul li a {
 }
 
 header div.but {
+    width: 294px;
     height: 56px;
-    padding-left: 40px;
+    margin-left: 25px;
 }
 
 header div.but button {
@@ -58,13 +65,95 @@ header div.but button {
 }
 
 header div.but button:first-child {
+    width: 99px;
     background-color: #ffffff;
     color: #000F98;
     border: 1px solid #000F98;
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 header div.but button:last-child {
+    width: 179px;
+    padding: 16px 0;
     background-color: #000F98;
     color: #ffffff;
+}
+
+section.sect1 {
+    height: 720px;
+    background-color: #F9FAFB;
+    padding: 100px 64px;
+}
+
+section.sect1 div {
+    float: left;
+    width: 50%;
+    height: 520px;
+}
+
+section.sect1 h1 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 56px;
+    margin: 10px 0;
+}
+
+section.sect1 img {
+    width: 200px;
+}
+
+section.sect1 h1 span {
+    font-size: 52px;
+    color: #333FAD;
+}
+
+section.sect1 p:first-child {
+    width: 298px;
+    font-size: 14px;
+    background-color: #F5F3E6;
+    color: #8A7D00;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+section.sect1 p:last-child {
+    color: #1D2739;
+}
+
+section.sect1 .box1 {
+    padding: 100px 10px;
+}
+
+section.sect1 .box2 img {
+    width: 270px;
+    height: 250px;
+    margin: 0 10px 10px 0;
+}
+
+section div.but {
+    height: 52px;
+    margin-top: 30px;
+}
+
+section div.but button {
+    font-weight: 600;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+section div.but button:last-child {
+    width: 99px;
+    background-color: #ffffff;
+    color: #000F98;
+    border: 1px solid #000F98;
+}
+
+section div.but button:first-child {
+    width: 179px;
+    background-color: #000F98;
+    color: #ffffff;
+    margin-right: 8px;
 }
