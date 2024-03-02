@@ -192,6 +192,7 @@ section.sect2 h4 {
 section.sect2 p:nth-child(3) {
     font-size: 14px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 section.sect2 .box {
@@ -420,4 +421,107 @@ section.sect3 p:last-child a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+}
+
+section.sect4 {
+    height: 960px;
+    padding: 60px 0px;
+}
+
+section.sect4 .head {
+    text-align: center;
+    height: 124px;
+    width: 700px;
+    margin: 0 auto 50px;
+}
+
+section.sect4 .head .flo {
+    float: left;
+}
+
+section.sect4 .head p:first-child {
+    width: 126px;
+    background-color: #F5F3E6;
+    color: #8A7D00;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 32px;
+}
+
+section.sect4 .head h4 {
+    width: 200px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 10px 0;
+    margin-left: 250px;
+}
+
+section.sect4 .head img {
+    margin-top: -30px;
+}
+
+section.sect4 .head p:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #667185;
+    clear: left;
+}
+
+section.sect4 .cont {
+    height: 580px;
+    background-color: #BAB054;
+}
+
+section.sect4 .cont .div1 {
+    float: left;
+    width: 53%;
+    height: 580px;
+    padding: 80px 32px;
+}
+
+section.sect4 .cont .div1:last-child {
+    width: 47%;
+    padding: 80px 56px;
+}
+
+section.sect4 .cont .div1 img {
+    width: 630px;
+    height: 448px;
+}
+
+section.sect4 .cont article:first-child {
+    margin-left: 15px;
+}
+
+section.sect4 .cont article:last-child {
+    margin-left: 10px;
+}
+
+section.sect4 .cont article .viv {
+    float: left;
+    width: 10%;
+    margin-bottom: 80px;
+}
+
+section.sect4 .cont article .viv:last-child {
+    width: 90%;
+}
+
+section.sect4 .cont article .viv h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #F9FAFB;
+}
+
+section.sect4 .cont article .viv p {
+    font-weight: 400;
+    line-height: 24px;
+    color: #F9FAFB;
 }
