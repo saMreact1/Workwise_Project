@@ -7,6 +7,10 @@
     color: #101928;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -75,10 +79,18 @@ header div.but button:first-child {
     margin-right: 8px;
 }
 
+header div.but button:first-child a {
+    color: #000F98;
+}
+
 header div.but button:last-child {
     width: 179px;
     padding: 16px 0;
     background-color: #000F98;
+    color: #ffffff;
+}
+
+header div.but button:last-child a {
     color: #ffffff;
 }
 
@@ -145,6 +157,7 @@ section div.but {
     width: 323px;
     height: 52px;
     margin: 30px auto;
+    padding-left: 17px;
 }
 
 section div.but button {
@@ -162,11 +175,19 @@ section div.but button:last-child {
     border: 1px solid #000F98;
 }
 
+section div.but button:last-child a {
+    color: #000F98;
+}
+
 section div.but button:first-child {
     width: 179px;
     background-color: #000F98;
     color: #ffffff;
     margin-right: 8px;
+}
+
+section div.but button:first-child a {
+    color: #ffffff;
 }
 
 section.sect2 {
