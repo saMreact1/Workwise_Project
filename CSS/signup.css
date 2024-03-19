@@ -84,20 +84,20 @@ div.container .img img:nth-of-type(2) {
     margin-top: 60px;
 }
 
-div.container .innercont {
+div.container:nth-of-type(2) {
     width: 550px;
     height: 550px;
     margin-left: 110px;
-    margin-top: 50px;
+    margin-top: -15px;
 }
 
-div.container .innercont .txt h2 {
-    font-size: 36px;
+div.container:nth-of-type(2) .txt h2 {
+    font-size: 34px;
     font-weight: 600;
     line-height: 44px;
 }
 
-div.container .innercont .txt p {
+div.container:nth-of-type(2) .txt p {
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 30px;
@@ -112,7 +112,7 @@ form label {
 
 form input {
     width: 500px;
-    height: 45px;
+    height: 40px;
     background-color: #F9FAFB;
     padding: 16px;
     margin-top: 5px;
@@ -124,15 +124,16 @@ form input:focus {
     outline: 0;
 }
 
-.input-control.success input {
+.form-control.success input {
     border-color: #09c372;
 }
 
-.input-control.error input {
+.form-control.error input {
     border-color: #ff3860;
 }
 
-.input-control .error {
+.form-control #name_error, .form-control #email_error,
+.form-control #password_error, .form-control #password2_error {
     color: #ff3860;
     font-size: 14px;
     margin-top: 2px;
@@ -153,33 +154,22 @@ form input::placeholder {
     border: none;
 }
 
-form p.forgot {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #667185;
-    text-align: center;
-    margin: 15px 20px;
-}
-
-form p.forgot a {
-    font-size: 14px;
-    color: #000F98;
-    font-weight: 600;
-    line-height: 20px;
+form .hr {
+    width: 500px;
 }
 
 form hr {
-    width: 42.8%;
+    width: 47.2%;
     display: inline-block;
     margin-bottom: 4px;
 }
 
 form button {
     width: 500px;
-    height: 45px;
+    height: 40px;
     padding: 12px;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 600;
     line-height: 24px;
     text-align: center;
@@ -203,16 +193,15 @@ form button span {
     display: inline;
 }
 
-form p.noacct {
+form p.login {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #667185;
-    margin-top: 20px;
     text-align: center;
 }
 
-form p.noacct a {
+form p.login a {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;

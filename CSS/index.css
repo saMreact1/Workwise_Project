@@ -22,7 +22,7 @@ header {
 
 header div {
     float: left;
-    width: 40%;
+    width: 46%;
 }
 
 header div.logo h1{
@@ -31,7 +31,7 @@ header div.logo h1{
 }
 
 header div.nav {
-    width: 60%;
+    width: 54%;
     height: 56px;
 }
 
@@ -95,7 +95,7 @@ header div.but button:last-child a {
 }
 
 section.sect1 {
-    height: 900px;
+    height: 940px;
     background-color: #F9FAFB;
     padding: 60px 64px;
 }
@@ -192,7 +192,7 @@ section div.but button:first-child a {
 
 section.sect2 {
     height: 890px;
-    padding: 60px 49px;
+    padding: 60px 64px;
 }
 
 section.sect2 p:first-child {
@@ -245,12 +245,12 @@ section.sect2 p:nth-child(3) {
 section.sect2 .box {
     position: relative;
     float: left;
-    width: 405px;
+    width: 421px;
     height: 568px;
     border: 1px solid #D0D5DD;
     border-radius: 24px;
     padding: 16px;
-    margin: 20px 5px;
+    margin: 20px 18px;
 }
 
 section.sect2 .box img {
@@ -259,7 +259,7 @@ section.sect2 .box img {
 }
 
 section.sect2 .box div {
-    padding: 10px 0;
+    padding: 10px 3px;
 }
 
 section.sect2 .box h5 {
@@ -378,7 +378,7 @@ section.sect3 .container .box {
 
 section.sect3 .container .box:nth-of-type(1), section.sect3 .container .box:nth-of-type(2),
 section.sect3 .container .box:nth-of-type(4), section.sect3 .container .box:nth-of-type(5) {
-    margin-right: 20px;
+    margin-right: 23px;
 }
 
 section.sect3 .container .box:nth-of-type(1), section.sect3 .container .box:nth-of-type(2),
@@ -542,6 +542,7 @@ section.sect4 .cont .div1:last-child {
 section.sect4 .cont .div1 img {
     width: 630px;
     height: 448px;
+    margin-top: -15px;
 }
 
 section.sect4 .cont article:first-child {

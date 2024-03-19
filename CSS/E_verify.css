@@ -33,7 +33,7 @@ div.container:nth-of-type(1) {
 }
 
 div.container .logo a h4 {
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 48px;
     padding-left: 20px;
@@ -84,20 +84,19 @@ div.container .img img:nth-of-type(2) {
     margin-top: 60px;
 }
 
-div.container .innercont {
-    width: 550px;
-    height: 550px;
+div.container:nth-of-type(2) {
+    width: 610px;
+    margin-top: 120px;
     margin-left: 110px;
-    margin-top: 50px;
 }
 
-div.container .innercont .txt h2 {
-    font-size: 36px;
+div.container:nth-of-type(2) .txt h2 {
+    font-size: 34px;
     font-weight: 600;
     line-height: 44px;
 }
 
-div.container .innercont .txt p {
+div.container:nth-of-type(2) .txt p {
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 30px;
@@ -105,17 +104,18 @@ div.container .innercont .txt p {
 }
 
 form label {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
+    display: block;
+    font-weight: 600;
+    line-height: 24px;
 }
 
 form input {
-    width: 500px;
-    height: 45px;
+    width: 72px;
+    height: 56px;
     background-color: #F9FAFB;
     padding: 16px;
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-right: 8.6px;
     border-radius: 6px;
     border: 1px solid #D0D5DD;
 }
@@ -124,95 +124,38 @@ form input:focus {
     outline: 0;
 }
 
-.input-control.success input {
+.form-control.success input {
     border-color: #09c372;
 }
 
-.input-control.error input {
+.form-control.error input {
     border-color: #ff3860;
-}
-
-.input-control .error {
-    color: #ff3860;
-    font-size: 14px;
-    margin-top: 2px;
-}
-
-form input::placeholder {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #98A2B3;
-}
-
-#submit {
-    color: #ffffff;
-    padding: 0;
-    border-radius: 8px;
-    background-color: #000F98;
-    border: none;
-}
-
-form p.forgot {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #667185;
-    text-align: center;
-    margin: 15px 20px;
-}
-
-form p.forgot a {
-    font-size: 14px;
-    color: #000F98;
-    font-weight: 600;
-    line-height: 20px;
-}
-
-form hr {
-    width: 42.8%;
-    display: inline-block;
-    margin-bottom: 4px;
 }
 
 form button {
     width: 500px;
-    height: 45px;
+    height: 56px;
     padding: 12px;
-    margin-top: 20px;
+    margin: 40px 0;
     font-weight: 600;
     line-height: 24px;
     text-align: center;
-    color: #344054;
-    border: 1px solid #D0D5DD;
+    color: #ffffff;
     border: none;
-    background-color: #ffffff;
-    border-radius: 6px;
+    background-color: #000F98;
+    border-radius: 8px;
     box-shadow: 1px 2px 5px #667185;
 }
 
-form button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-form button span {
-    position: relative;
-    bottom: 5px;
-    display: inline;
-}
-
-form p.noacct {
+form p:last-child {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #667185;
-    margin-top: 20px;
-    text-align: center;
+    text-align: ;
 }
 
-form p.noacct a {
+form p a {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
