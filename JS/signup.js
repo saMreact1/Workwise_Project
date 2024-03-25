@@ -40,4 +40,14 @@ var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     } else {
         password_error.innerHTML = "";
     }
-})
+});
+
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup")
+}
+function closePopup(){
+    popup.classList.remove("open-popup")
+}
