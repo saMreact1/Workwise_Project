@@ -15,82 +15,66 @@ button {
     cursor: pointer;
 }
 
-header {
-    padding: 20px 64px;
-    height: 92px;
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-header div {
-    float: left;
-    width: 46%;
+.navbar-brand {
+    width: 45%;
+    padding-left: 50px;
 }
 
-header div.logo h1{
+.navbar-brand h1 {
     font-size: 44px;
-    font-weight: 700;
+    font-weight: 700
 }
 
-header div.nav {
-    width: 54%;
-    height: 56px;
+.navbar ul li {
+    width: 100px;
+    text-align: center;
 }
 
-header div.nav ul {
-    list-style: none;
-}
-
-header div.nav ul li {
-    float: left;
-}
-
-header div.nav ul li:hover {
-    border: 1px solid #475367;
-    border-radius: 5px;
-}
-
-header div.nav ul li a {
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
+.navbar ul li a {
     color: #475367;
+    padding: 14px 20px;
     font-weight: 400;
     line-height: 24px;
 }
 
-header div.but {
-    width: 294px;
-    height: 56px;
-    margin-left: 20px;
+.navbar ul li:hover {
+    border: 1px solid #475367;
+    border-radius: 5px;
 }
 
-header div.but button {
-    font-weight: 600;
+.navbar .btn {
     padding: 14px 10px;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
 }
 
-header div.but button:first-child {
+.navbar .btn a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar .btn:nth-of-type(1) {
     width: 99px;
     background-color: #ffffff;
-    color: #000F98;
     border: 1px solid #000F98;
     margin-right: 8px;
 }
 
-header div.but button:first-child a {
+.navbar .btn:nth-of-type(1) a {
     color: #000F98;
 }
 
-header div.but button:last-child {
+.navbar .btn:nth-of-type(2) {
     width: 179px;
     padding: 16px 0;
     background-color: #000F98;
-    color: #ffffff;
 }
 
-header div.but button:last-child a {
+.navbar .btn:nth-of-type(2) a {
     color: #ffffff;
 }
 
@@ -116,12 +100,12 @@ section.sect1 img {
 
 section.sect1 img:first-child {
     margin-left: 10%;
-    margin-bottom: 8%;
+    margin-bottom: 15%;
 }
 
 section.sect1 img:last-child {
     margin-left: -23%;
-    margin-top: -10%;
+    margin-top: -5%;
     width: 53%;
 }
 
@@ -143,6 +127,10 @@ section.sect1 p:first-child {
     margin: 0 auto;
 }
 
+section.sect1 .box1 {
+    width: 99%;
+}
+
 section.sect1 .box1 p.last {
     width: 635px;
     color: #1D2739;
@@ -156,7 +144,7 @@ section.sect1 .box1 p.last {
 section div.but {
     width: 323px;
     height: 52px;
-    margin: 30px auto;
+    margin: 30px auto 40px;
     padding-left: 17px;
 }
 
@@ -177,6 +165,7 @@ section div.but button:last-child {
 
 section div.but button:last-child a {
     color: #000F98;
+    text-decoration: none;
 }
 
 section div.but button:first-child {
@@ -188,11 +177,11 @@ section div.but button:first-child {
 
 section div.but button:first-child a {
     color: #ffffff;
+    text-decoration: none;
 }
 
 section.sect2 {
-    height: 890px;
-    padding: 60px 64px;
+    padding: 60px 0px;
 }
 
 section.sect2 p:first-child {
@@ -242,27 +231,30 @@ section.sect2 p:nth-child(3) {
     clear: both;
 }
 
-section.sect2 .box {
+section.sect2 .col-md-4 {
     position: relative;
-    float: left;
-    width: 421px;
     height: 568px;
-    border: 1px solid #D0D5DD;
-    border-radius: 24px;
-    padding: 16px;
-    margin: 20px 18px;
+    margin: 20px 0px;
 }
 
-section.sect2 .box img {
+section.sect2 .col-md-4 article {
+    height: 568px;
+    padding: 15px;
+    border: 1px solid #D0D5DD;
+    border-radius: 24px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section.sect2 .col-md-4 img {
     width: 99.7%;
     height: 236px;
 }
 
-section.sect2 .box div {
+section.sect2 .col-md-4 div {
     padding: 10px 3px;
 }
 
-section.sect2 .box h5 {
+section.sect2 .col-md-4 h5 {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -270,16 +262,16 @@ section.sect2 .box h5 {
     color: #1D2739;
 }
 
-section.sect2 .box p {
+section.sect2 .col-md-4 p {
     font-weight: 400;
     line-height: 24px;
     color: #344054;
 }
 
-section.sect2 .box button {
+section.sect2 .col-md-4 button {
     position: absolute;
     bottom: 15px;
-    width: 92.7%;
+    width: 87.2%;
     height: 56px;
     padding: 16px 10px;
     border: none;
@@ -288,14 +280,13 @@ section.sect2 .box button {
 }
 
 section.sect3 {
-    padding: 60px 64px;
-    height: 1400px;
+    padding: 60px 0;
     background-color: #E4E7EC;
 }
 
 section.sect3 .head {
-    width: 832px;
-    height: 113px;
+    width: 60%;
+    height: 110px;
     margin: 10px auto;
 }
 
@@ -310,7 +301,7 @@ section.sect3 div.head img {
 }
 
 section.sect3 div.head .heada {
-    width: 72%;
+    width: 73%;
     height: 72px;
 }
 
@@ -331,26 +322,49 @@ section.sect3 div.head .heada p {
 }
 
 section.sect3 .navbar {
-    width: 995px;
+    width: 70%;
     height: 67px;
     background-color: #ffffff;
     border-radius: 32px;
     padding: 12px 10px;
-    margin: 0 auto 50px;
+    margin: 0 auto 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 section.sect3 .navbar ul {
     list-style: none;
+    width: 100%;
+    padding: 0;
 }
 
 section.sect3 .navbar ul li {
     float: left;
+    width: 18%;
+    border: none;
+}
+
+section.sect3 .navbar ul li.active {
+    background-color: #545EBA;
+    border-radius: 32px;
+}
+
+section.sect3 .navbar ul li.active a {
+    color: #ffffff;
+}
+
+section.sect3 .navbar ul li:nth-of-type(1) {
+    width: 13%;
+}
+
+section.sect3 .navbar ul li:nth-of-type(2), section.sect3 .navbar ul li:nth-of-type(3) {
+    width: 25.5%;
 }
 
 section.sect3 .navbar ul li a {
+    width: 100%;
     text-decoration: none;
     text-align: center;
-    padding: 10px 35.7px;
+    padding: 10px 25px;
     display: inline-block;
     font-weight: 400;
     line-height: 24px;
@@ -362,56 +376,57 @@ section.sect3 .navbar ul li a:hover {
     background-color: #545EBA;
 }
 
-section.sect3 .container {
-    height: 938px;
-}
-
-section.sect3 .container .box {
+section.sect3 .col-md-4 {
     float: left;
     width: 32.2%;
     height: 457px;
+    padding: 16px;
+}
+
+section.sect3 .col-md-4 article {
     padding: 15px;
     background-color: #ffffff;
     border: 1px solid #D0D5DD;
     border-radius: 24px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-section.sect3 .container .box:nth-of-type(1), section.sect3 .container .box:nth-of-type(2),
-section.sect3 .container .box:nth-of-type(4), section.sect3 .container .box:nth-of-type(5) {
-    margin-right: 23px;
+section.sect3 .col-md-4:nth-of-type(1), section.sect3 .col-md-4:nth-of-type(2),
+section.sect3 .col-md-4:nth-of-type(4), section.sect3 .col-md-4:nth-of-type(5) {
+    margin-right: 20px;
 }
 
-section.sect3 .container .box:nth-of-type(1), section.sect3 .container .box:nth-of-type(2),
-section.sect3 .container .box:nth-of-type(3) {
-    margin-bottom: 20px;
+section.sect3 .col-md-4:nth-of-type(1), section.sect3 .col-md-4:nth-of-type(2),
+section.sect3 .col-md-4:nth-of-type(3) {
+    margin-bottom: 50px;
 }
 
-section.sect3 .container .box img:first-child {
+section.sect3 .col-md-4 img:first-child {
     width: 99.7%;
     height: 236px;
 }
 
-section.sect3 .container .box .txt {
+section.sect3 .col-md-4 .txt {
     height: 169px;
     position: relative;
     margin-top: 13px;
 }
 
-section.sect3 .container .box .txt div {
+section.sect3 .col-md-4 .txt div {
     height: 36px;
     margin-bottom: 13px;
 }
 
-section.sect3 .container .box .txt div .flo {
+section.sect3 .col-md-4 .txt div .flo {
     float: left;
 }
 
-section.sect3 .container .box .txt div img.flo {
+section.sect3 .col-md-4 .txt div img.flo {
     float: right;
     padding: 8px 12px;
 }
 
-section.sect3 .container .box .txt .p2 {
+section.sect3 .col-md-4 .txt .p2 {
     clear: both;
     font-size: 18px;
     font-weight: 600;
@@ -420,7 +435,7 @@ section.sect3 .container .box .txt .p2 {
     line-height: 24px;
 }
 
-section.sect3 .container .box .txt .p1 {
+section.sect3 .col-md-4 .txt .p1 {
     background-color: #E6E7F5;
     color: #000F98;
     font-size: 14px;
@@ -430,7 +445,7 @@ section.sect3 .container .box .txt .p1 {
     border-radius: 4px;
 }
 
-section.sect3 .container .box .txt .p3 {
+section.sect3 .col-md-4 .txt .p3 {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -438,19 +453,19 @@ section.sect3 .container .box .txt .p3 {
     line-height: 17.4px;
 }
 
-section.sect3 .container .box .txt .p4 {
+section.sect3 .col-md-4 .txt .p4 {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
 }
 
-section.sect3 .container .box .txt a {
+section.sect3 .col-md-4 .txt a {
     text-decoration: none;
     position: absolute;
     bottom: 0;
 }
 
-section.sect3 .container .box .txt a p {
+section.sect3 .col-md-4 .txt a p {
     font-size: 14px;
     font-weight: 400;
     margin: 0;
@@ -459,19 +474,20 @@ section.sect3 .container .box .txt a p {
 }
 
 section.sect3 p:last-child {
-    margin: 50px;
+    margin: 50px 0 0;
     text-align: center;
     line-height: 24px;
 }
 
 section.sect3 p:last-child a {
+    color: #101928;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
 }
 
 section.sect4 {
-    height: 900px;
+    height: 1530px;
     padding: 60px 0px;
 }
 
@@ -522,75 +538,73 @@ section.sect4 .head p:last-child {
     clear: left;
 }
 
-section.sect4 .cont {
-    height: 580px;
+section.sect4 .row {
+    height: 700px;
 }
 
-section.sect4 .cont .div1 {
+section.sect4 .row .col-md-6 {
     float: left;
     width: 53%;
     height: 580px;
     padding: 80px 32px;
 }
 
-section.sect4 .cont .div1:last-child {
+section.sect4 .row .col-md-6:last-child {
     width: 45%;
     padding: 80px 56px;
+    margin-top: 20px;
     background-color: #BAB054;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-section.sect4 .cont .div1 img {
+section.sect4 .row .col-md-6 img {
     width: 630px;
     height: 448px;
     margin-top: -15px;
 }
 
-section.sect4 .cont article:first-child {
+section.sect4 .row article:first-child {
+    margin-left: 20px;
+}
+
+section.sect4 .row article:last-child {
     margin-left: 15px;
 }
 
-section.sect4 .cont article:last-child {
-    margin-left: 10px;
-}
-
-section.sect4 .cont article .viv {
+section.sect4 .row article .viv {
     float: left;
     width: 10%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
-section.sect4 .cont article .viv:last-child {
+section.sect4 .row article .viv:last-child {
     width: 90%;
 }
 
-section.sect4 .cont article .viv h4 {
+section.sect4 .row article .viv h4 {
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
     color: #F9FAFB;
 }
 
-section.sect4 .cont article .viv p {
+section.sect4 .row article .viv p {
     font-weight: 400;
     line-height: 24px;
     color: #F9FAFB;
 }
 
-section.sect5 {
-    height: 630px;
-    padding: 60px 64px;
-}
-
-section.sect5 div {
+section.sect4 div.sect5 {
     height: 491px;
     background-color: #E6726A;
     background-image: url(/IMG/Frame.png);
     text-align: center;
     border-radius: 24px;
     padding: 90px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-section.sect5 .txt h2 {
+section.sect4 div.sect5 .txt h2 {
     width: 815px;
     margin: 0 auto;
     font-size: 44px;
@@ -599,7 +613,7 @@ section.sect5 .txt h2 {
     color: #ffffff;
 }
 
-section.sect5 .txt p {
+section.sect4 div.sect5 .txt p {
     width: 562px;
     margin: 15px auto;
     font-size: 20px;
@@ -608,7 +622,7 @@ section.sect5 .txt p {
     color: #ffffff;
 }
 
-section.sect5 .txt button {
+section.sect4 div.sect5 .txt button {
     width: 179px;
     height: 52px;
     font-weight: 600;
@@ -631,6 +645,10 @@ footer {
 footer div {
     float: left;
     width: 20%;
+}
+
+footer div a {
+    text-decoration: none;
 }
 
 footer div:nth-child(2), footer div:nth-child(3) {
@@ -667,6 +685,7 @@ footer div ul {
 
 footer div ul li {
     margin: 6px 0;
+    margin-left: -25px;
 }
 
 footer div ul li a {
