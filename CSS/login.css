@@ -152,6 +152,17 @@ form input::placeholder {
     background-color: #000F98;
     border: none;
 }
+#submit a{
+color: #ffffff;
+}
+
+#submit a:hover{
+border: 1px solid yellow;
+padding: 8px;
+border-radius: 2px;
+
+
+}
 
 form p.forgot {
     font-size: 14px;
