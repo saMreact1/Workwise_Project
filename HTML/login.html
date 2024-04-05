@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,19 @@
     <script defer src="/JS/login.js"></script>
     <script src="https://kit.fontawesome.com/a341ab46f5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">
-            <a href="/index.html"><h4>Logo</h4></a>
+            <a href="/index.html">
+                <h4>Logo</h4>
+            </a>
         </div>
 
         <div class="text">
             <h1>Elevate your career with Workwise</h1>
-            <p>Our comprehensive course catlogue helps you build your career and helps you stand out amongst your colleagues</p>
+            <p>Our comprehensive course catalogue helps you build your career and helps you stand out amongst your
+                colleagues</p>
         </div>
 
         <div class="img">
@@ -33,11 +38,11 @@
                 <h2>Welcome Back!</h2>
                 <p>Enter your credentials to access your account</p>
             </div>
-    
-            <form id="form" action="/" method="get">
+
+            <form id="form" action="/HTML/E_verify.html" method="get">
                 <div class="input-control">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Email Address">
+                    <input type="email" id="email" name="email" placeholder="Email Address" autofocus>
                     <div class="error"></div>
                 </div>
                 <br>
@@ -47,17 +52,20 @@
                     <div class="error"></div>
                 </div>
                 <br>
-                <button type="submit" id="submit">Log In</button>
-    
+                <button type="submit" id="submit">Login</button>
+
                 <p class="forgot">Forgot Password? <a href="/HTML/forgot.html">Recover</a></p>
-    
-                <hr> <span>Or</span> <hr>
-    
-                <button><img src="/IMG/google.png" alt="google icon"><span>Log in with Google</span></button>
-    
+
+                <hr> <span>Or</span>
+                <hr>
+
+                <button type="submit"><img src="/IMG/google.png" alt="google icon"><span>Log in with
+                        Google</span></button>
+
                 <p class="noacct">Don't have an account? <a href="/HTML/signup.html">Sign Up</a></p>
             </form>
         </div>
     </div>
 </body>
+
 </html>
