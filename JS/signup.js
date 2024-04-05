@@ -44,10 +44,12 @@ var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
 
 let popup = document.getElementById("popup");
-
+let blur = document.getElementById("blur");
 function openPopup(){
-    popup.classList.add("open-popup")
+    popup.classList.add("open-popup");
+    blur.classList.add("active");
 }
 function closePopup(){
-    popup.classList.remove("open-popup")
+    popup.classList.remove("open-popup");
+    blur.classList.remove("active");
 }
