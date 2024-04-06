@@ -80,7 +80,7 @@ button {
 }
 
 section.sect1 {
-    height: 940px;
+    height: 950px;
     background-color: #F9FAFB;
     padding: 60px 64px;
 }
@@ -89,7 +89,7 @@ section.sect1 h1 {
     font-size: 44px;
     font-weight: 500;
     line-height: 48px;
-    width: 1043px;
+    width: 90%;
     text-align: center;
     height: 96px;
     margin: 20px auto;
@@ -133,12 +133,12 @@ section.sect1 .box1 {
 }
 
 section.sect1 .box1 p.last {
-    width: 635px;
+    width: 52%;
     color: #1D2739;
     font-weight: 400;
     line-height: 24px;
     text-align: center; 
-    margin: 0 auto;
+    margin: 20px auto;
     opacity: 70%;
 }
 
