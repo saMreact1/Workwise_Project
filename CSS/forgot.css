@@ -12,6 +12,12 @@ body {
     padding: 20px;
 }
 
+#blur.active {
+    opacity: 0.9;
+    filter: blur(10px);
+    pointer-events: none;
+}
+
 a {
     text-decoration: none;
 }
