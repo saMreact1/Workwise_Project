@@ -110,6 +110,11 @@ div.container:nth-of-type(2) .txt p {
     padding-top: 170px;
 }
 
+.form-control #email_error {
+    color: #ff3860;
+    font-size: 14px;
+}
+
 form label {
     font-size: 14px;
     font-weight: 500;
