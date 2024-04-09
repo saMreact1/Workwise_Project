@@ -11,36 +11,38 @@
     <script src="https://kit.fontawesome.com/a341ab46f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <a href="/index.html"><h4>Logo</h4></a>
-        </div>
-
-        <div class="text">
-            <h1>Elevate your career with Workwise</h1>
-            <p>Our comprehensive course catlogue helps you build your career and helps you stand out amongst your colleagues</p>
-        </div>
-
-        <div class="img">
-            <img src="/IMG/fontendframe.png" alt="">
-            <img src="/IMG/uxframe.png" alt="">
-        </div>
-    </div>
-
-    <div class="container">
-        <form id="form" method="get">
-            <div class="txt">
-                <h2>Forgot Password</h2>
-                <p>Enter your email address</p>
+    <div id="blur">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html"><h4>Workwise</h4></a>
             </div>
-
-            <div class="form-control">
-                <label for="email">Email Address</label>
-                <input type="text" name="email" id="email" placeholder="Email Address">
+    
+            <div class="text">
+                <h1>Elevate your career with Workwise</h1>
+                <p>Our comprehensive course catlogue helps you build your career and helps you stand out amongst your colleagues</p>
             </div>
-
-            <button type="submit" id="submit" onclick="openPopup()">Submit</button>
-        </form>
+    
+            <div class="img">
+                <img src="/IMG/fontendframe.png" alt="">
+                <img src="/IMG/uxframe.png" alt="">
+            </div>
+        </div>
+    
+        <div class="container">
+            <form id="form" method="get">
+                <div class="txt">
+                    <h2>Forgot Password</h2>
+                    <p>Enter your email address</p>
+                </div>
+    
+                <div class="form-control">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                </div>
+    
+                <button type="submit" id="submit" onclick="openPopup()">Submit</button>
+            </form>
+        </div>
     </div>
 
     <div class="popup" id="popup">
@@ -48,7 +50,9 @@
         <h6>Email has been sent</h6>
         <p>Check your email for a link to reset your password</p>
 
-        <button type="button" onclick="closePopup()">Close</button>
+        <form action="/index.html">
+            <button type="submit" onclick="closePopup()">Close</button>
+        </form>
     </div>
 </body>
 </html>
