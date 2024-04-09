@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORKWISE - Career Goals</title>
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Custom Home.css code -->
+  <link rel="stylesheet" href="/CSS/career-tracker.css">
+
+  <!-- Inter CSS CODE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="commit" id="blur">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white border-bottom mb-0 p-0 shadow-sm">
+      <div class="container navigation">
+        <a class="navbar-brand work ms-0 p-0" href="../index.html">Workwise</a>
+
+        <!-- Mobile collapse -->
+
+        <button class="navbar-toggler px-5 menu-class" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu-class-list" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 ms-2">
+            <div class="input-group-lg search-section w-100">
+              <input type="search" class="form-control mr-sm-2 h3 search ms-3 shadow-sm"
+                aria-label="search field with search icon" placeholder="What are you looking for?">
+              <div class="input-group magnifying-glass">
+                <button title="button" class="search-btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+          </form>
+        </div>
+
+        <!-- TOP NAVBAR -->
+        <ul class="nav justify-content-between ms-auto px-3 me-8">
+          <div class=" d-flex flex-row d-grid gap-2 align">
+            <li class="nav-item me-5">
+              <button type="button" class="btn position-relative">
+                <i class="fa-regular fa-bell bell-button"></i>
+                <div class="alert-dot">
+                  <span
+                    class="h5 position-absolute top-0 start-50 translate-middle-y badge-sm border border-light rounded-circle bg-danger p-2"><span
+                      class="visually-hidden">unread messages</span></span>
+                </div>
+              </button>
+
+            </li>
+            <li class="nav-item">
+              <div class="dropdown rounded-circle profile-box p-0 mb-0 me-8">
+                <button class="btn profile dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  O
+                </button>
+                <div class="dropdown-menu arrow-down shadow-lg pt-2 ms-auto" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item text-color d-flex flex-row p-2" href="/HTML/career-tracker.html"><i
+                      class="fa-solid fa-clipboard-list p-1"></i> Career Goals</a>
+                  <a class="dropdown-item text-color d-flex p-2" href="#"><i class="fa-solid fa-clipboard-list p-1"></i>
+                    My Purchases</a>
+                  <a class="dropdown-item text-color d-flex flex-row p-2" href="#"> <i
+                      class="fa-regular fa-user p-1"></i>Settings</a>
+                  <a class="dropdown-item text-color danger d-flex flex-row p-2" href="#"><i
+                      class="fa-solid fa-arrow-right-from-bracket p-1"></i> Sign Out</a>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <!-- END OF NAVIGATION PART -->
+
+    <section class="links">
+      <div class="container linker">
+        <ul class="nav sec-links">
+          <li class="nav-item text-link">
+            <a href="#" class="first">Home</a>
+            <hr class="first-hr">
+          </li>
+          <li class="nav-item text-link">
+            <a href="#" class="second">Career Test</a>
+            <hr class="second-hr">
+          </li>
+          <li class="nav-item text-link">
+            <a href="#">My Courses</a>
+            <hr>
+          </li>
+        </ul>
+        <div class="content-action">
+          <div class="header">
+            <h1 class="course-head">Career Goals</h1>
+            <p class="text-muted goal">Create your career goals and we help you keep track of your goals</p>
+          </div>
+          <div class="career">
+            <button title="Add goal" type="submit" class="shadow-lg" onclick="toggle()"><img src="/IMG/plus-circle.png"
+                alt="">
+              Add goal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+    </section>
+    <!-- END OF SECTION LINKS -->
+
+    <!-- Table section -->
+
+    <section class="tables">
+      <div class="table1">
+        <div class="head"><span>Goal title</span></div>
+        <div class="head"><span>Sub goal</span></div>
+        <div class="head"><span>Time period</span></div>
+        <div class="head"><span>Status</span></div>
+
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table2">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>0%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/Error-dot.png" alt="">Off track</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table3">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span> 6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>35%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/progress-dot.png" alt="">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table4">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>100%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/sucess-dot.png" alt="">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table2">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>0%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/Error-dot.png" alt="">Off track</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table2">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>0%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/Error-dot.png" alt="">Off track</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table2">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>0%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/Error-dot.png" alt="">Off track</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="table-hr">
+
+      <div class="table2">
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>Get Certified</span></div>
+        <div class="head"><span>6 months</span></div>
+        <div class="progressive">
+          <div class="progress-bar"></div>
+          <div class="range"></div>
+          <div class="head"><span>0%</span></div>
+
+          <div class="content">
+            <span><img src="/IMG/Error-dot.png" alt="">Off track</span>
+          </div>
+        </div>
+      </div>
+      <hr class="table-hr">
+    </section>
+
+    <!-- END OF TABLE SECTION -->
+
+  </div>
+
+  <!-- Modal Popup -->
+  <div class=" card pop-up shadow-lg" id="popup">
+    <div class="close">
+      <span>Create a new goal</span>
+      <img src="/IMG/close-icon-without-circle.png" id="close-icon" alt="" onclick="toggle()">
+    </div>
+
+    <div class="form">
+      <form action="#">
+        <!-- First Input -->
+        <div class="label">
+          <label for="goal" class="title">Goal Title</label>
+        </div>
+        <div class="input input-group mb-3">
+          <input type="text" class="form-control" placeholder="Goal Title" aria-label="goal-title"
+            aria-describedby="basic-addon1" id="goal" required>
+        </div>
+        <!-- Second Input -->
+        <div class="label">
+          <label for="sub-goal" class="title">Sub-Goal</label>
+        </div>
+        <div class="input input-group mb-3">
+          <input type="text" class="form-control" placeholder="Sub-Goal" aria-label="sub-goal"
+            aria-describedby="basic-addon1" id="sub-goal">
+        </div>
+        <!-- Third Input -->
+        <div class="label">
+          <label for="description" class="title">Description</label>
+        </div>
+        <div class="input input-group mb-3">
+          <input type="text" class="form-control" placeholder="Description" aria-label="description"
+            aria-describedby="basic-addon1" id="description">
+        </div>
+
+        <!-- breaking the input on the same line -->
+        <div class="last-form">
+
+          <!-- Fourth Input -->
+          <div class="fourth">
+            <div class="label">
+              <label for="time" class="title">Time Period</label>
+            </div>
+            <div class="input input-group mb-3">
+              <input type="date" class="form-control" placeholder="Time Period" aria-label="time-period"
+                aria-describedby="basic-addon1" id="time">
+            </div>
+          </div>
+          <!-- Fifth Input -->
+          <div class="fifth">
+            <div class="label">
+              <label for="status" class="title">Status</label>
+            </div>
+            <div class="input input-group mb-3">
+              <input type="text" class="form-control" placeholder="Status" aria-label="status"
+                aria-describedby="basic-addon1" id="status"><img src="/IMG/Dropdown-Icon.png" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="content">
+      <div class="buttons">
+        <a href="#" class="btn2 shadow-sm" onclick="toggle()">Cancel</a>
+        <a href="/HTML/career-tracker.html" class="btn1 shadow-sm">Save goal</a>
+      </div>
+    </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- home javascript -->
+
+  <script src="/js/career.js"></script>
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/f3b1b95936.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

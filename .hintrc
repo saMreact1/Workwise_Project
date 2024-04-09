@@ -22,7 +22,8 @@
       {
         "ignore": [
           "-webkit-tap-highlight-color",
-          "-webkit-text-size-adjust"
+          "-webkit-text-size-adjust",
+          "scale"
         ]
       }
     ],
