@@ -1,3 +1,4 @@
+
 // Modal Popup code
 
 function toggle() {
@@ -8,3 +9,4 @@ function toggle() {
   popUp.classList.toggle('show');
 
 }
+
