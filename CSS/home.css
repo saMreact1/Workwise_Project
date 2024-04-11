@@ -250,6 +250,10 @@ section .sec-links {
   list-style: none;
 }
 
+section .sec-links li a {
+  font-weight: 500;
+}
+
 section ul .text-link a {
   color: var(--grey-600);
   font-family: "Inter", sans-serif;
