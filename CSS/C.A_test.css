@@ -179,9 +179,11 @@ section.main-body p {
 
 .row .col-md-4 {
     margin: 50px auto;
+    display: grid;
 }
 
 .row .col-md-4 .card {
+    display: grid;
     padding: 16px;
     border-radius: 24px;
     border: 1px solid var(--grey-300);
