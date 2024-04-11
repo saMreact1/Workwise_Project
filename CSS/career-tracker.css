@@ -330,10 +330,7 @@ section ul .text-link a {
   text-decoration: none;
 }
 
-section ul .text-link .second,
-section .second-hr {
-  color: var(--purple-300);
-}
+
 
 /* section ul .text-link:hover,
 section ul hr:hover {

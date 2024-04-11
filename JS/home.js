@@ -8,3 +8,8 @@ function toggle() {
   popUp.classList.toggle('show');
 
 }
+
+
+setTimeout(function (){
+  toggle();
+},5000)
