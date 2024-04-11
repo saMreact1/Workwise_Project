@@ -197,10 +197,6 @@ section.main-body p {
     border-radius: 32px;
 }
 
-.row .col-md-4 .card .radio input {
-    accent-color: green;
-}
-
 .row .col-md-4 .card img {
     width: 100%;
     margin: 15px auto;
