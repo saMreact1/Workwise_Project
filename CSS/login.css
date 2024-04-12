@@ -157,7 +157,7 @@ color: #ffffff;
 }
 
 #submit a:hover{
-border: 1px solid yellow;
+border: none;
 padding: 8px;
 border-radius: 2px;
 
