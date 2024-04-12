@@ -191,14 +191,16 @@ section.main-body p {
 }
 
 .row .col-md-4 .card .radio {
-    background-color: var(--grey-200);
+    background: var(--grey-200);
     color: var(--grey-700);
     font-size: 14px;
     width: 150px;
     padding: 5px 10px;
     border-radius: 32px;
 }
-
+row .col-md-4 .card .radio {
+    
+}
 .row .col-md-4 .card img {
     width: 100%;
     margin: 15px auto;
