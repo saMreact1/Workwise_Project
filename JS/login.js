@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // If input is valid, submit the form
-        form.submit();
+        window.location.href = '/HTML/E_verify.html';
     });
 
     // Function to validate email format
