@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="/CSS/E_verify.css">
 
-    <script defer src="/JS/E_verify.js"></script>
+    <script defer src="/JS/E_verify.js" defer></script>
     <script src="https://kit.fontawesome.com/a341ab46f5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -41,16 +41,16 @@
 
             <div class="form-control">
                 <label for="name">Enter code</label>
-                <input type="text" id="code1" name="code" autofocus>
-                <input type="text" id="code2" name="code">
-                <input type="text" id="code3" name="code">
-                <input type="text" id="code4" name="code">
-                <input type="text" id="code5" name="code">
-                <input type="text" id="code6" name="code">
+                <input type="number" name="code" autofocus>
+                <input type="number" name="code" disabled>
+                <input type="number" name="code" disabled>
+                <input type="number" name="code" disabled>
+                <input type="number" name="code" disabled>
+                <input type="number" name="code" disabled>
                 <span id="name_error"></span>
             </div>
 
-            <button type="submit">Verify</button>
+            <button>Verify</button>
 
             <p class="">Didn't receive code? <a href="#">Resend</a></p>
         </form>
