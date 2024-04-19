@@ -198,9 +198,7 @@ section.main-body p {
     padding: 5px 10px;
     border-radius: 32px;
 }
-row .col-md-4 .card .radio {
-    
-}
+
 .row .col-md-4 .card img {
     width: 100%;
     margin: 15px auto;
@@ -236,4 +234,30 @@ row .col-md-4 .card .radio {
     color: var(--info-500);
     font-weight: 600;
     line-height: 24px;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    nav {
+        height: 60px;
+    }
+
+    button.navbar-toggler {
+        width: 5%;
+    }
+
+    section .sec-links {
+        display: none;
+    }
+
+    section.main-body {
+        margin-top: 20px;
+    }
+
+    section.main-body h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
 }
