@@ -81,9 +81,9 @@ a {
 
 .rocket {
   position: absolute;
-  height: 220px;
-  top: 50%;
-  left: 60%;
+  height: 270px;
+  top: 40%;
+  left: 52%;
 }
 
 
@@ -95,8 +95,8 @@ a {
 
 .cup {
   position: absolute;
-  height: 192px;
-  top: 2%;
+  height: 170px;
+  top: 5%;
   left: 42%;
 }
 
