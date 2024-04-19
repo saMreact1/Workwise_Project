@@ -86,6 +86,7 @@ section.sect1 {
 }
 
 section.sect1 h1 {
+    flex: 1;
     font-size: 44px;
     font-weight: 500;
     line-height: 48px;
@@ -129,6 +130,10 @@ section.sect1 p:first-child {
 }
 
 section.sect1 .box1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     width: 99%;
 }
 
@@ -137,7 +142,7 @@ section.sect1 .box1 p.last {
     color: #1D2739;
     font-weight: 400;
     line-height: 24px;
-    text-align: center; 
+    text-align: center;
     margin: 20px auto;
     opacity: 70%;
 }
@@ -287,18 +292,27 @@ section.sect2 .col-md-4 button a {
 }
 
 section.sect3 {
+    background-color: rgb(236, 241, 251);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     padding: 60px 0;
-    background-color: #E4E7EC;
+    /* background-color: #E4E7EC; */
 }
 
 section.sect3 .head {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+
     width: 60%;
     height: 110px;
     margin: 10px auto;
 }
 
 section.sect3 div.head div {
-    float: left;
+align-items: center;
 }
 
 section.sect3 div.head img {
@@ -308,11 +322,12 @@ section.sect3 div.head img {
 }
 
 section.sect3 div.head .heada {
-    width: 72%;
+    width: auto;
     height: 72px;
 }
 
 section.sect3 div.head .heada h4 {
+    
     text-align: center;
     line-height: 36px;
     font-weight: 600;
@@ -329,16 +344,22 @@ section.sect3 div.head .heada p {
 }
 
 section.sect3 .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
     width: 70%;
     height: 67px;
-    background-color: #ffffff;
+ 
     border-radius: 32px;
     padding: 12px 10px;
-    margin: 0 auto 60px;
+    margin: 120px auto;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 section.sect3 .navbar ul {
+    flex: 1;
+    flex-wrap: wrap;
     list-style: none;
     width: 100%;
     padding: 0;
@@ -363,7 +384,8 @@ section.sect3 .navbar ul li:nth-of-type(1) {
     width: 13%;
 }
 
-section.sect3 .navbar ul li:nth-of-type(2), section.sect3 .navbar ul li:nth-of-type(3) {
+section.sect3 .navbar ul li:nth-of-type(2),
+section.sect3 .navbar ul li:nth-of-type(3) {
     width: 25.5%;
 }
 
@@ -398,12 +420,15 @@ section.sect3 .col-md-4 article {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-section.sect3 .col-md-4:nth-of-type(1), section.sect3 .col-md-4:nth-of-type(2),
-section.sect3 .col-md-4:nth-of-type(4), section.sect3 .col-md-4:nth-of-type(5) {
+section.sect3 .col-md-4:nth-of-type(1),
+section.sect3 .col-md-4:nth-of-type(2),
+section.sect3 .col-md-4:nth-of-type(4),
+section.sect3 .col-md-4:nth-of-type(5) {
     margin-right: 15px;
 }
 
-section.sect3 .col-md-4:nth-of-type(1), section.sect3 .col-md-4:nth-of-type(2),
+section.sect3 .col-md-4:nth-of-type(1),
+section.sect3 .col-md-4:nth-of-type(2),
 section.sect3 .col-md-4:nth-of-type(3) {
     margin-bottom: 50px;
 }
@@ -659,7 +684,8 @@ footer div a {
     text-decoration: none;
 }
 
-footer div:nth-child(2), footer div:nth-child(3) {
+footer div:nth-child(2),
+footer div:nth-child(3) {
     width: 16%;
 }
 

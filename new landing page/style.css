@@ -1,0 +1,203 @@
+:root {
+  font-family: "Inter", sans-serif;
+  /* grey colors */
+  --grey-50: #f9fafb;
+  --grey-100: #f0f2f5;
+  --grey-200: #e4e7ec;
+  --grey-300: #d0d5dd;
+  --grey-400: #98a2b3;
+  --grey-500: #667185;
+  --grey-600: #475367;
+  /* blue colors */
+  --blue-400: #000f98;
+  --blue-500: #000f98;
+  --blue-600: #000b6c;
+  --blue-700: #000b6c;
+  --blue-800: #002c38;
+  --blue-900: #000640;
+
+  /* red colors */
+  --red-50: #fbeae9;
+  --red-100: #f3beba;
+  --red-200: #ee9e98;
+  --red-300: #e6726a;
+  --red-400: #e1574d;
+  --red-500: #d92d20;
+
+  /* purple colors */
+  --purple-100: #e6e7f5;
+  --purple-200: #8a91d0;
+  --purple-300: #545eba;
+  --purple-400: #333fad;
+  --purple-500: #000f98;
+  /* orange */
+  --orange-400: #E18308;
+
+
+}
+
+/* navbar styling */
+.cover{
+background-color: white;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.navy,
+a {
+  font-weight: 600;
+}
+
+.login {
+  border-color: var(--blue-500);
+  color: var(--blue-500);
+}
+
+.login:hover {
+  background-color: var(--blue-500);
+  color: white;
+}
+
+.create {
+  background-color: var(--blue-500);
+}
+
+.create:hover {
+  background-color: white;
+  color: var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+/* main part */
+.elevate {
+  position: relative;
+}
+
+.workwise {
+  color: var(--blue-400);
+}
+
+.rocket {
+  position: absolute;
+  height: 220px;
+  top: 50%;
+  left: 60%;
+}
+
+
+/* what we offer section */
+
+.offer {
+  position: relative;
+}
+
+.cup {
+  position: absolute;
+  height: 192px;
+  top: 2%;
+  left: 42%;
+}
+
+.offer2 {
+  cursor: pointer;
+}
+
+/* launch a new career styling */
+.new-career {
+  background-color: var(--grey-100);
+  position: relative;
+}
+
+.calendar {
+  position: absolute;
+  top: 3%;
+  left: 20%;
+  height: 95px;
+}
+
+.newh1 {
+  font-size: 28px;
+}
+
+.medal {
+  position: absolute;
+  top: 3%;
+  left: 71%;
+  height: 95px;
+}
+
+.m-cards,
+.menu {
+  cursor: pointer;
+}
+
+
+/* our process */
+
+.process {
+  position: relative;
+}
+
+.thunder {
+  position: absolute;
+  top: 6%;
+  left: 65%;
+  height: 95px;
+}
+
+/* take the next step */
+
+.take-step {
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer-place {
+  background-color: var(--blue-700);
+}
+
+.footer-place h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.footer-place .logo,
+.footer-place .links a{
+color: white;
+}
+
+.footer-place .links a:hover,
+.footer-place .links img {
+  color: var(--grey-400);
+}
+
+p.copyright{
+color: white;
+font-size: 14px;
+}
+
+
+
+/* screen size for icon display */
+
+@media(max-width: 1150px) {
+
+  .rocket,
+  .cup,
+  .thunder {
+    display: none;
+  }
+}
+
+@media(min-width:100px) and (max-width: 1380px){
+
+.medal,
+.calendar{
+display: none;
+}
+}
+
