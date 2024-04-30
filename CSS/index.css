@@ -754,3 +754,177 @@ footer .copy p {
     line-height: 20px;
     height: 20px;
 }
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .navbar-brand {
+        padding-left: 10px;
+    }
+    
+    .navbar-brand h1 {
+        font-size: 35px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        background-color: #f2f4f7;
+        border-radius: 10px;
+    }
+    
+    .navbar ul li {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .navbar ul li a {
+        padding: 16px 20px;
+    }
+    
+    .navbar .btn {
+        width: 49%;
+        padding: 14px 10px;
+    }
+    
+    .navbar .btn:nth-of-type(1) {
+        width: 46%;
+        margin-right: 0px;
+    }
+
+    .navbar .btn:nth-of-type(1):hover {
+        background-color: #000F98;
+    }
+
+    .navbar .btn:nth-of-type(1):hover a {
+        color: #ffffff;
+    }
+    
+    .navbar .btn:nth-of-type(2) {
+        width: 46%;
+        padding: 16px 0;
+        background-color: #000F98;
+    }
+
+    .navbar .btn:nth-of-type(2):hover {
+        background-color: #ffffff;
+        border: 1px solid #000F98;
+    }
+
+    .navbar .btn:nth-of-type(2):hover a {
+        color: #000F98;
+    }
+
+    section.sect1 {
+        height: 720px;
+        padding: 30px 0px;
+    }
+    
+    section.sect1 h1 {
+        font-size: 35px;
+        margin: 10px auto;
+    }
+
+    section.sect1 .box2 {
+        margin-top: 10px;
+    }
+    
+    section.sect1 img {
+        width: 50%;
+    }
+
+    section.sect1 h1 span {
+        font-size: 43px;
+    }
+    
+    section.sect1 .box1 {
+        width: 100%;
+    }
+    
+    section.sect1 .box1 p.last {
+        width: 80%;
+        margin: 0px auto;
+    }
+    
+    section div.but {
+        width: 90%;
+        margin: 20px auto;
+        padding-left: 0;
+    }
+    
+    section div.but button:last-child {
+        width: 49%;
+    }
+
+    section div.but button:last-child:hover {
+        background-color: #000F98;
+    }
+
+    section div.but button:last-child:hover a {
+        color: #ffffff;
+    }
+    
+    section div.but button:first-child {
+        width: 49%;
+        border: 1px solid #000F98;
+        margin-right: 3px;
+    }
+
+    section div.but button:first-child:hover {
+        background-color: #ffffff;
+        border: 1px solid #000F98;
+    }
+    
+    section div.but button:first-child:hover a {
+        color: #000F98;
+    }
+
+    section.sect2 {
+        padding: 30px 20px;
+    }
+    
+    section.sect2 p:first-child {
+        width: 140px;
+        font-size: 12px;
+    }
+    
+    section.sect2 .cup {
+        width: 90%;
+    }
+    
+    section.sect2 .cup div {
+        float: left;
+    }
+    
+    section.sect2 .cup div img {
+        width: 75px;
+        height: 75px;
+        margin-top: -10px;
+    }
+    
+    section.sect2 h4 {
+        margin: 10px 0;
+        margin-left: 55px;
+        font-size: 23px;
+    }
+    
+    section.sect2 p:nth-child(3) {
+        font-size: 13px;
+    }
+    
+    section.sect2 .col-sm-12 img {
+        height: 220px;
+    }
+    
+    section.sect2 .col-sm-12 div {
+        padding: 20px 3px;
+    }
+    
+    section.sect2 .col-sm-12 h5 {
+        font-size: 20px;
+    }
+    
+    section.sect2 .col-sm-12 p {
+        font-size: 14px;
+    }
+}

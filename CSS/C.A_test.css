@@ -260,4 +260,13 @@ section.main-body p {
         font-size: 30px;
         font-weight: 600;
     }
+
+    .row .col-md-4 {
+        margin: 20px auto;
+        display: grid;
+    }
+
+    .main-body p.container {
+        margin-top: 30px;
+    }
 }
