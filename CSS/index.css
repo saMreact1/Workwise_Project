@@ -749,7 +749,7 @@ footer .copy p {
 
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
     .navbar-brand {
         padding-left: 10px;
     }
