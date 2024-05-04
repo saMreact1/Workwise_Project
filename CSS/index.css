@@ -277,7 +277,7 @@ section.sect2 .col-md-4 p {
 section.sect2 .col-md-4 button {
     position: absolute;
     bottom: 15px;
-    width: 87.2%;
+    width: 85.4%;
     height: 56px;
     padding: 16px 10px;
     border: none;
@@ -817,7 +817,7 @@ footer .copy p {
     }
 
     section.sect1 .box2 {
-        margin-top: 10px;
+        margin-top: 15px;
     }
     
     section.sect1 img {
@@ -838,13 +838,15 @@ footer .copy p {
     }
     
     section div.but {
-        width: 100%;
         margin: 20px auto;
-        padding-left: 0;
+    }
+
+    section div.but button a {
+        font-size: 14.5px;
     }
     
     section div.but button:last-child {
-        width: 40%;
+        width: 49.2%;
     }
 
     section div.but button:last-child:hover {
@@ -856,7 +858,7 @@ footer .copy p {
     }
     
     section div.but button:first-child {
-        width: 40%;
+        width: 49.2%;
         border: 1px solid #000F98;
         margin-right: 0px;
     }
@@ -880,7 +882,7 @@ footer .copy p {
     }
     
     section.sect2 .cup {
-        width: 90%;
+        width: 100%;
     }
     
     section.sect2 .cup div {
@@ -901,6 +903,11 @@ footer .copy p {
     
     section.sect2 p:nth-child(3) {
         font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    section.sect2 .col-sm-12 {
+        margin-bottom: 10px;
     }
     
     section.sect2 .col-sm-12 img {
@@ -925,18 +932,18 @@ footer .copy p {
     }
     
     section.sect3 .head {
-        width: 95%;
-        margin: 5px auto;
+        width: 100%;
+        margin: 10px auto;
     }
     
     section.sect3 div.head img {
-        height: 75px;
-        width: 75px;
-        margin-top: -10px;
+        height: 55px;
+        width: 55px;
+        margin-top: 0px;
     }
     
     section.sect3 div.head .heada h4 {
-        font-size: 20px;
+        font-size: 17px;
     }
     
     section.sect3 div.head .heada p {
@@ -950,12 +957,13 @@ footer .copy p {
     
     section.sect3 .col-md-4 {
         padding: 5px;
+        margin-bottom: 10px;
     }
 
     section.sect3 .col-md-4:nth-of-type(1),
     section.sect3 .col-md-4:nth-of-type(2),
     section.sect3 .col-md-4:nth-of-type(3) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 }
     
     section.sect3 .col-md-4 img:first-child {
@@ -992,5 +1000,153 @@ footer .copy p {
     
     section.sect3 p:last-child a {
         font-size: 16px;
+    }
+
+    section.sect4 {
+        height: 1370px;
+        padding: 30px 18px;
+    }
+    
+    section.sect4 .head {
+        height: 100px;
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+    
+    section.sect4 .head p:first-child {
+        font-size: 12px;
+        padding: 3px;
+    }
+    
+    section.sect4 .head h4 {
+        margin: 3px auto;
+        margin-left: 90px;
+    }
+    
+    section.sect4 .head img {
+        width: 65px;
+        height: 65px;
+        margin-top: -5px;
+        margin-left: -10px;
+    }
+    
+    section.sect4 .head p:last-child {
+        font-size: 13px;
+        line-height: 0px;
+    }
+    
+    section.sect4 .row {
+        height: 650px;
+    }
+
+    section.sect4 .row .col-md-6:first-child {
+        display: none;
+    }
+    
+    section.sect4 .row .col-md-6:last-child {
+        width: 100%;
+        padding: 50px 25px;
+        border-radius: 15px;
+    }
+    
+    section.sect4 .row article:first-child {
+        margin-left: 20px;
+    }
+    
+    section.sect4 .row article:last-child {
+        margin-left: 15px;
+    }
+    
+    section.sect4 .row article .viv {
+        margin-bottom: 45px;
+    }
+    
+    section.sect4 .row article .viv h4 {
+        font-size: 24px;
+    }
+    
+    section.sect4 .row article .viv p {
+        font-size: 14px;
+    }
+    
+    section.sect4 div.sect5 {
+        width: 100%;
+        padding: 30px 15px;
+    }
+    
+    section.sect4 div.sect5 .txt h2 {
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    section.sect4 div.sect5 .txt p {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    section.sect4 div.sect5 .txt button {
+        width: 170px;
+        margin: 45px auto;
+    }
+
+    footer {
+        width: 100%;
+        height: 450px;
+        padding: 20px;
+    }
+
+    footer div:nth-child(1) {
+        width: 100%;
+    }
+    
+    footer div:nth-child(2),
+    footer div:nth-child(3) {
+        width: 50%;
+    }
+    
+    footer div:nth-child(4) {
+        width: 50%;
+        margin-top: 15px;
+    }
+    
+    footer div:nth-child(5) {
+        width: 50%;
+        margin-top: 15px;
+    }
+    
+    footer div h2 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+    
+    footer div h6 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+    }
+    
+    footer div ul li {
+        margin: 4px 0;
+    }
+
+    footer div ul li a {
+        font-size: 14px;
+    }
+    
+    footer div a i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    
+    footer .copy {
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+    }
+    
+    footer .copy p {
+        font-size: 12px;
     }
 }
