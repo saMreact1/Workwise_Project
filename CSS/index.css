@@ -827,6 +827,11 @@ footer .copy p {
     section.sect1 h1 span {
         font-size: 43px;
     }
+
+    section.sect1 p:first-child {
+        width: 280px;
+        font-size: 12px;
+    }
     
     section.sect1 .box1 {
         width: 100%;
@@ -1071,7 +1076,7 @@ footer .copy p {
     }
 
     section.sect4 .row article .viv:last-child {
-        width: 80%;
+        width: 85%;
     }
     
     section.sect4 .row article .viv h4 {
@@ -1086,12 +1091,12 @@ footer .copy p {
         width: 100%;
         height: 540px;
         padding: 30px 15px;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
     
     section.sect4 div.sect5 .txt h2 {
         width: 100%;
-        font-size: 30px;
+        font-size: 26px;
     }
     
     section.sect4 div.sect5 .txt p {
