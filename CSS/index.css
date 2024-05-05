@@ -896,7 +896,7 @@ footer .copy p {
     
     section.sect2 h4 {
         margin: 10px 0;
-        margin-left: 80px;
+        margin-left: 60px;
         font-size: 20px;
     }
     
@@ -925,6 +925,10 @@ footer .copy p {
         font-size: 14px;
     }
 
+    section.sect2 .col-md-4 button {
+        width: 84.5%;
+    }
+
     section.sect3 {
         padding: 30px 18px;
         /* background-color: #E4E7EC; */
@@ -946,6 +950,7 @@ footer .copy p {
     }
     
     section.sect3 div.head .heada p {
+        width: 100%;
         margin: 0px;
         font-size: 12px;
     }
@@ -1057,7 +1062,15 @@ footer .copy p {
     }
     
     section.sect4 .row article .viv {
-        margin-bottom: 45px;
+        margin-bottom: 30px;
+    }
+
+    section.sect4 .row article .viv:nth-of-type(1) {
+        margin-right: 10px;
+    }
+
+    section.sect4 .row article .viv:last-child {
+        width: 80%;
     }
     
     section.sect4 .row article .viv h4 {
