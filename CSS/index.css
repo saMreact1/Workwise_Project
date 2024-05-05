@@ -1028,14 +1028,14 @@ footer .copy p {
     
     section.sect4 .head h4 {
         margin: 3px auto;
-        margin-left: 90px;
+        margin-left: 80px;
     }
     
     section.sect4 .head img {
         width: 65px;
         height: 65px;
         margin-top: -5px;
-        margin-left: -10px;
+        margin-left: -20px;
     }
     
     section.sect4 .head p:last-child {
