@@ -276,3 +276,93 @@ form p.login a {
     margin-top: 35px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+@media only screen and (max-width: 480px) {
+    div.container {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    div.container:nth-of-type(1) {
+        display: none;
+    }
+
+    div.container:nth-of-type(2) {
+        width: 100%;
+        height: 118vh;
+        padding: 25px 20px;
+        margin-left: 0;
+        margin-top: 0;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    div.container:nth-of-type(2) .txt h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    div.container:nth-of-type(2) .txt p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    form label {
+        font-size: 12px;
+    }
+    
+    form input {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .form-control #name_error,
+    .form-control #email_error,
+    .form-control #password_error,
+    .form-control #password2_error {
+        font-size: 12px;
+    }
+    
+    form input::placeholder {
+        font-size: 11px;
+    }
+    
+    form .hr {
+        width: 100%;
+    }
+    
+    form hr {
+        width: 46.1%;
+        margin-bottom: 4px;
+    }
+
+    form .hr span {
+        font-size: 13px;
+    }
+    
+    form button {
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    form button img {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 2px;
+    }
+
+    form button span {
+        bottom: 4px;
+    }
+    
+    form p.login {
+        font-size: 12px;
+    }
+    
+    form p.login a {
+        font-size: 12px;
+    }
+}
