@@ -346,6 +346,11 @@ form p.login a {
         width: 100%;
         height: 40px;
         font-size: 13px;
+        box-shadow: none;
+    }
+
+    form button:nth-of-type(2) {
+        box-shadow: 0px 0px 5px #667185;
     }
     
     form button img {
