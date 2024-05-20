@@ -900,7 +900,7 @@ footer .copy p {
     
     section.sect2 h4 {
         margin: 10px 0;
-        margin-left: 60px;
+        margin-left: 40px;
         font-size: 20px;
     }
     
@@ -1028,7 +1028,7 @@ footer .copy p {
     
     section.sect4 .head h4 {
         margin: 3px auto;
-        margin-left: 80px;
+        margin-left: 60px;
     }
     
     section.sect4 .head img {
@@ -1064,7 +1064,7 @@ footer .copy p {
     }
     
     section.sect4 .row article:last-child {
-        margin-left: 15px;
+        margin-left: 5px;
     }
     
     section.sect4 .row article .viv {
@@ -1072,11 +1072,12 @@ footer .copy p {
     }
 
     section.sect4 .row article .viv:nth-of-type(1) {
-        margin-right: 10px;
+        margin-right: 3px;
+        width: 35px;
     }
 
     section.sect4 .row article .viv:last-child {
-        width: 85%;
+        width: 82%;
     }
     
     section.sect4 .row article .viv h4 {
