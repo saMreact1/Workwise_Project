@@ -49,6 +49,7 @@ button {
 
 .navbar .btn {
     padding: 14px 10px;
+    margin-right: 50px;
     border: none;
     border-radius: 8px;
 }
