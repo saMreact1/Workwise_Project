@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/CSS/login.css">
 
     <script defer src="/JS/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js" defer></script>
     <script src="https://kit.fontawesome.com/a341ab46f5.js" crossorigin="anonymous"></script>
+    <script src="/js/API/LoginApi.js" defer></script>
 </head>
 
 <body>
@@ -39,8 +41,9 @@
                 <p>Enter your credentials to access your account</p>
             </div>
 
-            <form id="form" action="/HTML/E_verify.html" method="get">
+            <form id="form" method="post">
                 <div class="input-control">
+                    
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="Email Address" autofocus>
                     <div class="error"></div>
@@ -59,7 +62,7 @@
                 <hr> <span>Or</span> <hr>
 
                 <button type="submit"><img src="/IMG/google.png" alt="google icon">
-                    <span>Log in withGoogle</span>
+                    <span>Log in with Google</span>
                 </button>
 
                 <p class="noacct">Don't have an account? <a href="/HTML/signup.html">Sign Up</a></p>

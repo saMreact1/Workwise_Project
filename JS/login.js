@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
     const emailInput = document.getElementById('email');
     const passInput = document.getElementById('pass');
+    const loginButton = document.getElementById('submit')
 
     form.addEventListener('submit', function (event) {
         // Prevent the default form submission
@@ -10,17 +11,25 @@ document.addEventListener('DOMContentLoaded', function () {
         // Validate email
         if (!isValidEmail(emailInput.value.trim())) {
             showError(emailInput, 'Please enter a valid email address.');
+            emailInput.style.borderColor = 'red';
+            passInput.style.borderColor = 'red';
             return;
+        }else {
+            showError(emailInput, ''); 
+            emailInput.style.borderColor = 'green';   
         }
 
         // Validate password
         if (passInput.value.trim() === '') {
             showError(passInput, 'Please enter your password.');
+            passInput.style.borderColor = 'red';
             return;
+        }else {
+            showError(passInput, '');
+            passInput.style.borderColor = 'green';
         }
 
-        // If input is valid, submit the form
-        window.location.href = '/HTML/E_verify.html';
+        
     });
 
     // Function to validate email format
@@ -32,8 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to show error message
     function showError(input, message) {
-        const errorDiv = input.nextElementSibling;
+        let errorDiv = input.nextElementSibling;
         errorDiv.textContent = message;
         errorDiv.style.visibility = 'visible';
+       
     }
 });
+
