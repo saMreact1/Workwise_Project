@@ -53,7 +53,7 @@ form.addEventListener("submit", async (e) => {
     .then(function (response) {
       showError(response.data.message);
       //   console.log(response.data.message);
-      console.log(response);
+    //   console.log(response);
     })
     .catch(function (error) {
       console.log(error);
