@@ -12,7 +12,7 @@ function inputElement(input, message) {
   }
 }
 
-function showError(message) {
+function showError(message, verified) {
   if (message === "Incorrect Password") {
     inputElement(password, message);
     password.style.borderColor = "red";
@@ -27,16 +27,18 @@ function showError(message) {
     email.style.borderColor = "red";
   }
 
-  if (message === "User Login Successful") {
-    setTimeout(() => {
-      window.location.href = "/HTML/home.html";
-    }, 1500);
-  }
+  if (message == "User Login Successful") {
+  setTimeout(() => {
+    window.location.href = "/HTML/home.html";
+  }, 100);
 }
+}
+
+// 684168
 
 // If input is valid, submit the form
 
-form.addEventListener("submit", async (e) => {
+const LoginApiCall = form.addEventListener("submit", async (e) => {
   e.preventDefault(); //to prevent page refresh
 
   let emailValue = email.value;
@@ -47,13 +49,17 @@ form.addEventListener("submit", async (e) => {
     password: passwordValue,
   };
 
-  console.log(passwordValue);
+  // aynsc _  await
+
+  // console.log(passwordValue);
   const req = await axios
     .post(`https://work-wise-server-side.onrender.com/users/login`, config)
     .then(function (response) {
-      showError(response.data.message);
+      
+        showError(response.data.message, response.data.verified);
+      
       //   console.log(response.data.message);
-    //   console.log(response);
+      console.log(response);
     })
     .catch(function (error) {
       console.log(error);
@@ -63,3 +69,4 @@ form.addEventListener("submit", async (e) => {
 // loginButton.addEventListener('click', () => {
 //     console.log('Clicked');
 // })
+

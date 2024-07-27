@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="/CSS/signup.css">
 
-    <script defer src="/JS/signup.js"></script>
+    <script defer src="/JS/signup.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js" defer></script>
     <script src="https://kit.fontawesome.com/a341ab46f5.js" crossorigin="anonymous"></script>
+    <script src="/JS/API/signupApi.js" type="module"></script>
 </head>
 
 <body>
@@ -34,7 +36,7 @@
         </div>
 
         <div class="container">
-            <form id="form" action="/HTML/E_verify.html" method="get">
+            <form id="form" method="post">
                 <div class="txt">
                     <h2>Create your account</h2>
                     <p>Sign up and get your career started</p>
@@ -42,7 +44,7 @@
 
                 <div class="form-control">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Adeleke Samuel" autofocus autocomplete="additional-name">
+                    <input type="text" id="name" name="fullname" placeholder="Adeleke Samuel" autofocus autocomplete="additional-name">
                     <span id="name_error"></span>
                 </div>
                 <br>
@@ -60,10 +62,10 @@
                 <br>
                 <div class="form-control">
                     <label for="password2">Confirm Password</label>
-                    <input type="password" id="password2" name="password2" placeholder="Enter your password">
+                    <input type="password" id="password2" name="password2" placeholder="Confirm your password">
                     <span id="password2_error"></span>
                 </div>
-                <button type="submit" id="submit" onclick="openPopup()">Sign Up</button>
+                <button type="submit" id="submit">Sign Up</button>
 
                 <div class="hr">
                     <hr> <span>Or</span> <hr>
@@ -80,9 +82,17 @@
     <div class="popup" id="popup">
         <img src="/IMG/Group 216.png" alt="check">
         <h6>Account created successfully</h6>
-        <p>Kindly check your email to verify your account</p>
-        <form action="/HTML/home.html">
-        <button type="submit" onclick="closePopup()">Close</button>
+        <p class="create-details">Kindly check your email for a code to verify your account</p>
+        <form>
+        <button type="submit" onclick="closeLoginPopUp()" class="btn-verify">Enter Code</button>
+        </form>
+    </div>
+    <div class="popup" id="popup2">
+        <img src="/IMG/close-icon.png" alt="check" class="popup_image">
+        <h6 class="popup_message"></h6> 
+        <p class="popup_message2"></p>
+        <form>
+        <button type="submit" onclick="closeErrorPopUp()">Close</button>
         </form>
     </div>
 </body>

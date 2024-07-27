@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="/CSS/E_verify.css">
 
-    <script defer src="/JS/E_verify.js" defer></script>
+    <script src="/JS/API/otpVerify.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js" defer></script>
+    <script defer src="/JS/E_verify.js" type="module" defer></script>
     <script src="https://kit.fontawesome.com/a341ab46f5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -33,7 +35,7 @@
     </div>
 
     <div class="container">
-        <form id="form" action="/HTML/home.html" method="get">
+        <form id="form">
             <div class="txt">
                 <h2>Verify your Email</h2>
                 <p>Enter the 6 digits sent to <span>xyz@gmail.com</span></p>
