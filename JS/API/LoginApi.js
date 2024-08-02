@@ -3,6 +3,11 @@ let email = document.querySelector("#email");
 let password = document.querySelector("#pass");
 let formError = document.querySelector(".error");
 // const loginButton = document.getElementById('submit');
+const googleSignInBtn = document.getElementById("google-signIn-btn");
+//google sign in
+googleSignInBtn.addEventListener('click', ()=> {
+  location.href = "https://work-wise-server-side.onrender.com/users/google/callback";
+});
 
 function inputElement(input, message) {
   if (input) {
