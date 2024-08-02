@@ -2,6 +2,14 @@ const inputs = document.querySelectorAll("input");
 const button = document.querySelector("button");
 const form = document.querySelector("#form");
 
+
+const url = new URL(location.href);
+const userId = url.searchParams.get("id");
+const userName = url.searchParams.get("name");
+const userEmailParam = url.searchParams.get("email");
+
+const userEmail = document.getElementById("user_email");
+userEmail.innerText = userEmailParam;
 // Function to handle OTP input
 inputs.forEach((input, index) => {
     input.addEventListener("keyup", (e) => {
@@ -37,7 +45,6 @@ inputs.forEach((input, index) => {
 // Function to handle form submission (verify OTP)
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let token = localStorage.getItem('token'); // Retrieve token from localStorage
 
     // Collect OTP code from inputs
     let otpCode = "";
@@ -56,7 +63,7 @@ form.addEventListener("submit", (e) => {
         headers: {
             "Content-Type": "application/json",
             // Replace 'data.token' with your actual token logic
-            Authorization: `Bearer ${token}`,
+            
         },
         data: data,
     };
@@ -65,7 +72,7 @@ form.addEventListener("submit", (e) => {
     axios.request(config)
         .then((response) => {
             console.log(JSON.stringify(response.data));
-            console.log(response.data.message);
+            console.log(response.data);
             // Handle response data as needed (e.g., redirect user or display message)
         })
         .catch((error) => {

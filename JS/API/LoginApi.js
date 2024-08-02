@@ -12,7 +12,7 @@ function inputElement(input, message) {
   }
 }
 
-function showError(message, verified) {
+function showError(message, id) {
   if (message === "Incorrect Password") {
     inputElement(password, message);
     password.style.borderColor = "red";
@@ -29,7 +29,7 @@ function showError(message, verified) {
 
   if (message == "User Login Successful") {
   setTimeout(() => {
-    window.location.href = "/HTML/home.html";
+    window.location.href = `/HTML/home.html?id=${id}`;
   }, 100);
 }
 }
@@ -56,7 +56,7 @@ const LoginApiCall = form.addEventListener("submit", async (e) => {
     .post(`https://work-wise-server-side.onrender.com/users/login`, config)
     .then(function (response) {
       
-        showError(response.data.message, response.data.verified);
+        showError(response.data.message, response.data["userId"]);
       
       //   console.log(response.data.message);
       console.log(response);

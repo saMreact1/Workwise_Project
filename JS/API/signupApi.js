@@ -26,6 +26,17 @@ let removePopUpStyles = (popupName, blurName) => {
   popupName.classList.remove("open-popup");
   blurName.classList.remove("active");
 };
+
+// function for dynamic verify url:
+
+function otpCodePage(name, id){
+  setTimeout(()=> {
+  window.location.href = `/HTML/E_verify.html?id=${id}&name=${name}&email=${email}&token=${token}`;
+}, 9000);
+}
+
+
+
 // popups show functions
 function openLoginPopup() {
 
@@ -36,11 +47,7 @@ function openLoginPopup() {
 // sync not async
   setTimeout(()=> {
     messageDetails.innerHTML = "This page will automatically redirect";
-  }, 3000)
-
-  setTimeout(()=> {
-    window.location.href = "/HTML/E_verify.html";
-  }, 9000);
+  }, 3000); 
 }
 //verrify button
 function closeLoginPopUp(){
@@ -130,6 +137,9 @@ form.addEventListener("submit", (e) => {
       .then((response) => {
         console.log(JSON.stringify(response.data));
         showCreatedAccount(response.data);
+        console.log(response.data.user.fullName);
+        console.log(response.data.user.userId);
+        otpCodePage(response.data.user.userId, response.data.user.fullName);
       })
       .catch((error) => {
         console.log(error);
