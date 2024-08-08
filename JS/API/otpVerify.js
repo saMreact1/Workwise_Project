@@ -17,6 +17,7 @@ const createdUserName = localStorage.getItem("userName");
 const createdUserToken = localStorage.getItem("userToken");
 const createdUserEmail = localStorage.getItem("userEmail");
 const createdUserOtpCode = localStorage.getItem("userOtpCode");
+const createdUserId = localStorage.getItem("userId");
 // console.log(createdUserName);
 // console.log(createdUserEmail);
 // console.log(createdUserOtpCode);
@@ -58,7 +59,7 @@ inputs.forEach((input, index) => {
 // Function to handle form submission (verify OTP)
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    
     // Collect OTP code from inputs
     let otpCode = "";
     inputs.forEach(input => {
@@ -86,7 +87,8 @@ form.addEventListener("submit", (e) => {
         .then((response) => {
             // console.log(JSON.stringify(response.data.message));
             // console.log(response.data);
-            verifyAccount(response.data.message);
+            console.log(response.data.message);
+            verifyAccount(response.data.message,);
             // Handle response data as needed (e.g., redirect user or display message)
         })
         .catch((error) => {
@@ -104,7 +106,7 @@ function verifyAccount(message){
         popupBox.style.borderColor ="blue";
         popupVerificationMessage.innerText = message;
         setTimeout(()=>{
-        location.href ="/HTML/home.html";
+        location.href =`/HTML/home.html?_id=${createdUserId}`;
         }, 5000);
     }else{
         popupBox.style.display = "none";
