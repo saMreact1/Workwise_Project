@@ -95,7 +95,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (fullName.value == "" || fullName == null) {
     e.preventDefault();
-    fullName_error.innerHTML = "Full Name can't be empty";
+    fullName_error.innerHTML = "Full Name is required";
     fullName.style.borderColor = "red";
   } else if (email.value == "") {
     e.preventDefault();
