@@ -213,7 +213,28 @@ form .search-btn {
   font-size: 20px;
   right: 30px;
 }
+.navbar-brand {
+  width: 32%;
+  padding-left: 50px;
+  display: flex;
+ 
+}
 
+.navbar-brand h1 {
+  font-size: 44px;
+  font-weight: 700;
+  position: absolute;
+  top: 30px;
+}
+
+.navbar-brand > img {
+margin-left: -6px;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  left: 180px;
+  bottom: -9px;
+}
 nav ul li button .bell-button {
   font-size: 34px;
 }
@@ -509,6 +530,13 @@ footer .logo {
   text-align: center;
   justify-content: center;
   align-content: center;
+}
+
+footer .logo img{
+  width: 150px;
+  height: 100px;
+  left: 180px;
+  top: 398px;
 }
 
 footer .logo h1 {

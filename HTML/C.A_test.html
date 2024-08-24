@@ -16,6 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="/JS/API/CaTestApi.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js" defer></script>
 </head>
 
 <body>
@@ -62,10 +64,10 @@
   
             </li>
             <li class="nav-item">
-              <div class="dropdown rounded-circle profile-box p-0 mb-0 me-8">
-                <button class="btn profile dropdown-toggle" type="button" id="dropdownMenuButton"
+              <div class="dropdown rounded-circle profile-box p-0 mb-0 me-8 ">
+                <button class="btn profile dropdown-toggle profile-button" type="button" id="dropdownMenuButton"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  O
+                 
                 </button>
                 <div class="dropdown-menu arrow-down shadow-lg pt-2 ms-auto" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item text-color d-flex flex-row p-2" href="/HTML/career.html"><i
@@ -74,7 +76,7 @@
                     My Purchases</a>
                   <a class="dropdown-item text-color d-flex flex-row p-2" href="#"> <i
                       class="fa-regular fa-user p-1"></i>Settings</a>
-                  <a class="dropdown-item text-color danger d-flex flex-row p-2" href="#"><i
+                  <a class="dropdown-item text-color danger d-flex flex-row p-2 sign-out"><i
                       class="fa-solid fa-arrow-right-from-bracket p-1"></i> Sign Out</a>
                 </div>
               </div>
