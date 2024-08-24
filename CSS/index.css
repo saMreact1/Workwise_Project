@@ -23,11 +23,25 @@ button {
 .navbar-brand {
     width: 45%;
     padding-left: 50px;
+    display: flex;
+   
 }
 
 .navbar-brand h1 {
     font-size: 44px;
-    font-weight: 700
+    font-weight: 700;
+    position: absolute;
+    top: 30px;
+}
+
+.navbar-brand > img {
+  margin-left: -12px;
+  
+    position: relative;
+    width: 150px;
+    height: 100px;
+    left: 180px;
+    bottom: -5px;
 }
 
 .navbar ul li {
@@ -114,7 +128,7 @@ section.sect1 img:last-child {
 
 section.sect1 h1 span {
     font-size: 52px;
-    color: #333FAD;
+    color:  #000f98;
 }
 
 section.sect1 p:first-child {
@@ -1115,6 +1129,8 @@ footer .copy p {
         margin-top: 30px;
     }
 
+  
+
     footer div:nth-child(1) {
         width: 100%;
     }
@@ -1134,10 +1150,12 @@ footer .copy p {
         margin-top: 15px;
     }
     
-    footer div h2 {
+    /* footer div h2 {
         font-size: 28px;
         margin-top: 0;
-    }
+    } */
+
+ 
     
     footer div h6 {
         font-size: 16px;

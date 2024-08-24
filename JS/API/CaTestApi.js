@@ -1,4 +1,3 @@
-//fetching username from backend
 let profileBtn = document.querySelector(".profile-button");
 let user_name = localStorage.getItem("userName");
 let signOut = document.querySelector(".sign-out");
